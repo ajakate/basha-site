@@ -4,8 +4,8 @@
   "description": "Landing site for Basha",
   "main": "index.js",
   "scripts": {
-    "start": "tailwindcss -i ./source/stylesheets/site.css -o ./build/stylesheets/site.css --watch",
-    "build": "tailwindcss -i ./source/stylesheets/site.css -o ./build/stylesheets/site.css"
+    "start": "./node_modules/tailwindcss/lib/cli.js -i ./source/stylesheets/site.css -o ./build/stylesheets/site.css --watch",
+    "build": "./node_modules/tailwindcss/lib/cli.js -i ./source/stylesheets/site.css -o ./build/stylesheets/site.css"
   },
   "keywords": [],
   "author": "",
