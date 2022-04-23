@@ -57,4 +57,8 @@ configure :build do
     latency: 1
 
   ignore 'stylesheets/components/*.css'
+
+  config[:http_prefix] = '/basha-site'
+  config[:css_dir] = ""
+  config[:js_dir] = ""
 end
