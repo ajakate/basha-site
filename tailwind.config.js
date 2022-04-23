@@ -1,4 +1,5 @@
 module.exports = {
+    content: ["./source/**/*.{slim,js}"],
     theme: {
         extend: {
             colors: {

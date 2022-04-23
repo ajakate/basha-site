@@ -37,7 +37,7 @@ set :slim, { :format => :html }
 
 configure :development do
   activate :external_pipeline,
-    name: :gulp,
+    name: :tailwind,
     command: 'npm start',
     source: '.tmp',
     latency: 1
@@ -51,7 +51,7 @@ set :frontmatter_extensions, %w(.html .slim)
 
 configure :build do
   activate :external_pipeline,
-    name: :gulp,
+    name: :tailwind,
     command: 'npm run build',
     source: '.tmp',
     latency: 1
