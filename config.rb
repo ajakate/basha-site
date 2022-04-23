@@ -59,6 +59,6 @@ configure :build do
   ignore 'stylesheets/components/*.css'
 
   config[:http_prefix] = '/basha-site'
-  config[:css_dir] = ""
-  config[:js_dir] = ""
+  # config[:css_dir] = ""
+  # config[:js_dir] = ""
 end
