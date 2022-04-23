@@ -56,7 +56,7 @@ configure :build do
     source: '.tmp',
     latency: 1
 
-  ignore 'stylesheets/components/*.css'
+  # ignore 'stylesheets/components/*.css'
 
   # Don't need prefix on deployed site
   # config[:http_prefix] = '/basha-site'
