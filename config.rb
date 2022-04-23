@@ -58,7 +58,6 @@ configure :build do
 
   ignore 'stylesheets/components/*.css'
 
-  config[:http_prefix] = '/basha-site'
-  # config[:css_dir] = ""
-  # config[:js_dir] = ""
+  # Don't need prefix on deployed site
+  # config[:http_prefix] = '/basha-site'
 end
