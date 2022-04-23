@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="68px" viewBox="0 0 48 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Blue Diamond</title>
+    <defs>
+        <filter x="-40.0%" y="-24.0%" width="180.0%" height="148.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Basha" transform="translate(-46.000000, -651.000000)" fill-rule="nonzero">
+            <g id="Main-Summary" transform="translate(17.000000, 23.000000)">
+                <g id="Blue-Diamond" filter="url(#filter-1)" transform="translate(38.000000, 637.000000)">
+                    <path d="M15,0.971825316 L29.1169048,24.5 L0.883095189,24.5 L15,0.971825316 Z" id="Triangle" stroke="#62DFDD" fill="#83DCDC"></path>
+                    <path d="M29.1169048,25.5 L15,49.0281747 L0.883095189,25.5 L29.1169048,25.5 Z" id="Triangle" stroke="#62DFDD" fill="#83DCDC"></path>
+                    <polygon id="Path-5" fill="#A3EEF1" points="15 6.65798959 15 24 16 25 26.2475516 25 27.1084781 23.4912707 16.8609265 6.14926028"></polygon>
+                    <polygon id="Path-5" fill="#60A5A6" points="15 43.3420104 15 26 14 25 3.75244839 25 2.89152187 26.5087293 13.1390735 43.8507397"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
