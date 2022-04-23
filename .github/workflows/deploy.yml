@@ -2,6 +2,7 @@
 
 name: Deploy Middleman to GH Pages
 
+
 on:
   push:
     branches: [master]
