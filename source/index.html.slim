@@ -3,49 +3,42 @@ title: Welcome to Middleman
 ---
 
 body.bg-gradient-to-r.from-basha-yellow.to-basha-turq
-  div.max-w-4xl.bg-white.shadow-lg.rounded-lg.pb-80.rounded-r-full
-    ul.flex.items-center
-      li.mr-10.items-center
-        img.inline src="images/logo.svg" alt="logo"
-        p.inline.font-extrabold.text-basha-bold-orange.text-lg
-          | Basha
-      li.mr-6
-        = link_to("The Mission","https://middlemanapp.com/basics/templating_language/",target: "_blank",class: "underline")
-      li.mr-6
-        | The Methodology
-      li.mr-6
-        | Installation Guide
-      li.mr-6
-        | Community Decks
-    div.relative
-      h1.text-5xl.relative
-        |  Consider us the P2P of
-        br
-        | language learning
-      ul
-        li
-          img.inline src="images/orange_diamond.svg"
-          p.inline
-            | lksdj skjd fksjf kuekf sk h sef sjeh fkjwekh wje fjweh jfhwe
-        li
-          img.inline src="images/yellow_diamond.svg"
-          p.inline
-            | lksdj skjd fksjf kuekf sk h sef sjeh fkjwekh wje fjweh jfhwe 
-        li
-          img.inline src="images/green_diamond.svg"
-          p.inline
-            | lksdj skjd fksjf kuekf sk h sef sjeh fkjwekh wje fjweh jfhwe 
-        li
-          img.inline src="images/blue_diamond.svg"
-          p.inline
-            | lksdj skjd fksjf kuekf sk h sef sjeh fkjwekh wje fjweh jfhwe
-      img.absolute.h-14.-right-80.top-0.object-contain.h-full.mr-96 src="images/splash.png" alt="splash"
-  div.grid.grid-cols-4
-    div.max-w-sm.bg-white.shadow-lg.rounded-lg.m-12.border-basha-bold-orange.border-4
-      | null
-    div
-      | null
-    div
-      | null
-    div
-      | null
+	div.grid.grid-cols-6.bg-white.bg-opacity-85
+		div.p-2.5
+			img.inline.align-middle src="images/logo.svg" alt="logo"
+			p.inline.font-extrabold.text-basha-bold-orange.text-lg.align-middle
+				| Basha
+		= link_to("The Mission","https://middlemanapp.com/basics/templating_language/",target: "_blank",class: "align-middle text-basha-orange pt-4 font-bold")
+		= link_to("The Methodology","https://middlemanapp.com/basics/templating_language/",target: "_blank",class: "align-middle text-basha-orange pt-4 font-bold")
+		= link_to("Installation Guide","https://middlemanapp.com/basics/templating_language/",target: "_blank",class: "align-middle text-basha-orange pt-4 font-bold")
+		= link_to("Community Decks","https://middlemanapp.com/basics/templating_language/",target: "_blank",class: "align-middle text-basha-orange pt-4 font-bold")
+	div.max-w-5xl.bg-white.shadow-lg.rounded-lg.pb-80.rounded-tr-full.bg-opacity-80
+		div.relative
+      		h1.text-5xl.relative.m-0.py-12.pl-14
+        		|  Consider us the P2P of
+        		br
+        		| language learning.
+			div.grid.grid-cols-2.ml-2.relative
+				ul.flex-col.justify-around
+					li.flex.mb-6
+						img.inline src="images/orange_diamond.svg"
+						p.inline
+							| We are a free service that gives you the tools to learn less common languages that often lack adequate resources. Our goal is to help children of immigrants to reconnect with their mother tongues. Read Our Mission.
+					li.flex.mb-6
+						img.inline src="images/yellow_diamond.svg"
+						p.inline
+							| Our methodology and tools center around Spaced Repetition Learning (SRS) - recognized by most polyglots as the ideal way to begin a language-learning journey (think flashcards). Learn the Science. 
+					li.flex
+						img.inline src="images/green_diamond.svg"
+						p.inline
+							| You provide the translator and the will to learn, and we offer a comprehensive Anki deck of translatable phrases and a platform for your translator to record and hand off their audio.
+      		img.absolute.h-14.-right-96.top-0.object-contain.h-full.mr-96 src="images/splash.png" alt="splash"
+  	div.grid.grid-cols-4
+    	div.max-w-sm.bg-white.shadow-lg.rounded-lg.m-12.border-basha-bold-orange.border-4
+      		| null
+    	div
+      		| null
+    	div
+      		| null
+    	div
+      		| null
