@@ -3,15 +3,22 @@ title: Welcome to Middleman
 ---
 
 body.bg-gradient-to-r.from-basha-yellow.to-basha-turq
-	div.grid.grid-cols-6.bg-white.bg-opacity-85
+	div.grid.grid-cols-2.lg:grid-cols-6.bg-white.bg-opacity-85
 		div.p-2.5
 			img.inline.align-middle src="images/logo.svg" alt="logo"
-			p.inline.font-extrabold.text-basha-bold-orange.text-lg.align-middle
-				| Basha
-		= link_to("The Mission","https://middlemanapp.com/basics/templating_language/",target: "_blank",class: "align-middle text-basha-orange pt-4 font-bold hover:underline")
-		= link_to("The Methodology","https://middlemanapp.com/basics/templating_language/",target: "_blank",class: "align-middle text-basha-orange pt-4 font-bold hover:underline")
-		= link_to("Installation Guide","https://middlemanapp.com/basics/templating_language/",target: "_blank",class: "align-middle text-basha-orange pt-4 font-bold hover:underline")
-		= link_to("Community Decks","https://middlemanapp.com/basics/templating_language/",target: "_blank",class: "align-middle text-basha-orange pt-4 font-bold hover:underline")
+			p.inline.font-extrabold.text-basha-bold-orange.text-lg.align-middle Basha
+		= link_to("The Mission","https://middlemanapp.com/basics/templating_language/",target: "_blank",class: "align-middle text-basha-turq pt-4 mx-2 font-bold hover:underline hidden lg:block")
+		= link_to("The Methodology","https://middlemanapp.com/basics/templating_language/",target: "_blank",class: "align-middle text-basha-turq pt-4 mx-2 font-bold hover:underline hidden lg:block")
+		= link_to("Installation Guide","https://middlemanapp.com/basics/templating_language/",target: "_blank",class: "align-middle text-basha-turq pt-4 mx-2 font-bold hover:underline hidden lg:block")
+		= link_to("Community Decks","https://middlemanapp.com/basics/templating_language/",target: "_blank",class: "align-middle text-basha-turq pt-4 mx-2 font-bold hover:underline hidden lg:block")
+		div.flex.col-start-2.justify-end
+			i#hamburger.fa.fa-chevron-down.lg:hidden.text-basha-turq.pr-6.scale-150.hover:text-cyan-600.inline-flex.items-center
+			i#exit.fa.fa-chevron-up.hidden.lg:hidden.text-basha-turq.pr-6.scale-150.hover:text-cyan-600.inline-flex.items-center
+	div#menu.flex.flex-col.bg-white.pb-3.hidden
+		= link_to("The Mission","https://middlemanapp.com/basics/templating_language/",target: "_blank",class: "align-middle text-basha-turq pt-4 mx-2 font-bold hover:underline lg:hidden")
+		= link_to("The Methodology","https://middlemanapp.com/basics/templating_language/",target: "_blank",class: "align-middle text-basha-turq pt-4 mx-2 font-bold hover:underline lg:hidden")
+		= link_to("Installation Guide","https://middlemanapp.com/basics/templating_language/",target: "_blank",class: "align-middle text-basha-turq pt-4 mx-2 font-bold hover:underline lg:hidden")
+		= link_to("Community Decks","https://middlemanapp.com/basics/templating_language/",target: "_blank",class: "align-middle text-basha-turq pt-4 mx-2 font-bold hover:underline lg:hidden")
 	div.flex
 		div.w-full.grid.grid-cols-2
 			div
