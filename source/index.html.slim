@@ -4,14 +4,16 @@ title: Welcome to Middleman
 
 body.bg-gradient-to-r.from-basha-yellow.to-basha-turq
 	= partial 'navbar'
-	div.flex
-		div.w-full.grid.grid-cols-2
-			div
-				h1.text-5xl.m-0.py-14.pl-14
-					|  Consider us the P2P of
-					br
-					| language learning.
-				div.ml-4.mr-10
+	.grid.grid-cols-4.grid-auto-6.items-stretch
+		div.max-w-5xl.bg-white.shadow-lg.rounded-lg.rounded-tr-full.bg-opacity-90.col-span-full.row-start-1.row-span-3
+		div.bg-basha-orange.bg-opacity-85.col-span-full.row-start-4.row-span-3
+		img.scale-90.col-start-3.col-span-2.row-start-1.row-span-2 src="images/splash.png" alt="splash"
+		div.col-start-1.col-span-2.row-start-1
+			h1.text-5xl.m-0.py-14.pl-14
+				|  Consider us the P2P of
+				br
+				| language learning.
+		div.ml-4.mr-10.col-start-1.col-span-2.row-start-2
 					ul.flex-col.justify-around
 						li.flex.mb-6
 							img.inline.scale-75 src="images/orange_diamond.svg"
@@ -25,36 +27,41 @@ body.bg-gradient-to-r.from-basha-yellow.to-basha-turq
 							img.inline.scale-75 src="images/green_diamond.svg"
 							span.inline
 								| You provide the translator and the will to learn, and we offer a comprehensive Anki deck of translatable phrases and a platform for your translator to record and hand off their audio.
-      		img.mt-10.scale-90 src="images/splash.png" alt="splash"
-		div.max-w-5xl.bg-white.shadow-lg.rounded-lg.rounded-tr-full.bg-opacity-90.w-full.margin-overlay
-	div.bg-basha-orange.bg-opacity-85
-		div.grid.grid-cols-4.grid-flow-row
-			= partial 'number_widget', locals: { \
-				alt: "interpreter", \
-				image: "images/interpreter.svg",
-				heading: "Pick a Language and Recruit a Translator", \
-				text1: "Basha seeks to bridge the gap between language learners and native speakers.", \
-				text2: "Try reaching out to online communities like Reddit if you don't have a translator.", \
-				border_class: "border-basha-bold-orange"}
-			= partial 'number_widget', locals: { \
-				alt: "configure", \
-				image: "images/configure.svg",
-				heading: "Use Our Heroku and Anki Installation Guides", \
-				text1: "We'll show you how to create your own online Basha instance and get started with the included Anki deck.", \
-				text2: "We tried to tailor this step for the less technically inclined, but feel free to contact us if you need help.", \
-				border_class: "border-basha-yellow"}
-			= partial 'number_widget', locals: { \
-				alt: "record", \
-				image: "images/record.svg",
-				heading: "Send your Deck To Your Translator For Recording", \
-				text1: "Your translator will record themselves reading the deck in their own language in Basha.", \
-				text2: "Our recording sequence tool takes most of the brain work out, but you should still buy them a coffee to say thanks!", \
-				border_class: "border-basha-green"}
-			= partial 'number_widget', locals: { \
-				alt: "learn", \
-				image: "images/learn.svg",
-				heading: "Export Your Recorded Deck for SRS Learning", \
-				text1: "You can now export your new deck from Basha and practice on Anki.", \
-				text2: "Don't forget to share your deck with the Basha community!", \
-				border_class: "border-basha-turq"}
-				
+		= partial 'number_widget', locals: { \
+			alt: "interpreter", \
+			image: "images/interpreter.svg",
+			heading: "Pick a Language and Recruit a Translator", \
+			text1: "Basha seeks to bridge the gap between language learners and native speakers.", \
+			text2: "Try reaching out to online communities like Reddit if you don't have a translator.", \
+			border_class: "border-basha-bold-orange", \
+			position_classes: "col-start-1 row-start-3 row-span-2"}
+		= partial 'number_widget', locals: { \
+			alt: "configure", \
+			image: "images/configure.svg",
+			heading: "Use Our Heroku and Anki Installation Guides", \
+			text1: "We'll show you how to create your own online Basha instance and get started with the included Anki deck.", \
+			text2: "We tried to tailor this step for the less technically inclined, but feel free to contact us if you need help.", \
+			border_class: "border-basha-yellow", \
+			position_classes: "col-start-2 row-start-3 row-span-2"}
+		= partial 'number_widget', locals: { \
+			alt: "record", \
+			image: "images/record.svg",
+			heading: "Send your Deck To Your Translator For Recording", \
+			text1: "Your translator will record themselves reading the deck in their own language in Basha.", \
+			text2: "Our recording sequence tool takes most of the brain work out, but you should still buy them a coffee to say thanks!", \
+			border_class: "border-basha-green", \
+			position_classes: "col-start-3 row-start-3 row-span-2"}
+		= partial 'number_widget', locals: { \
+			alt: "learn", \
+			image: "images/learn.svg",
+			heading: "Export Your Recorded Deck for SRS Learning", \
+			text1: "You can now export your new deck from Basha and practice on Anki.", \
+			text2: "Don't forget to share your deck with the Basha community!", \
+			border_class: "border-basha-turq", \
+			position_classes: "col-start-4 row-start-3 row-span-2"}
+		div.col-start-1.col-span-4.row-start-5
+			h1.text-5xl.m-0.py-14.pl-14 Why Did We Make This (and why are we giving it away for free)?
+		div.col-start-1.col-span-2.row-start-6.m-10
+			p There is a long history of immigrants facing pressure to assimilate when they come to America. For too long, our educations systems placed a misinformed emphasis on immigrant children speaking only English at home. As those children grew into adulthood, many found themselves completely divorced from their mother tongue.
+			p Basha exists to help children of immigrants recover mother tongues that are less common and not covered by traditional language-learning apps. We reconnect families that have been separated by linguistic barriers by empowering our users with tools to implement science-backed methods of language learning.
+			p Basha is 100% free for all users. We believe in celebrating the immigrant experience, including our rich multi-lingual histories. Also, and you'll have to excuse our blasphemy, we don't believe that everything on the internet has to be monetized 😉.
