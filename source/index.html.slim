@@ -4,11 +4,11 @@ title: Welcome to Middleman
 
 body.bg-gradient-to-r.from-basha-yellow.to-basha-turq
 	= partial 'navbar'
-	.grid.grid-cols-4.grid-auto-6.items-stretch
-		div.max-w-5xl.bg-white.shadow-lg.rounded-lg.rounded-tr-full.bg-opacity-90.col-span-full.row-start-1.row-span-3
-		div.bg-basha-orange.bg-opacity-85.col-span-full.row-start-4.row-span-3
-		img.scale-90.col-start-3.col-span-2.row-start-1.row-span-2.place-self-center src="images/splash.png" alt="splash"
-		div.col-start-1.col-span-2.row-start-1.place-self-center.text-center.m-7
+	.grid.grid-cols-2.grid-auto-11.lg:grid-cols-4.lg:grid-auto-6.items-stretch
+		div.max-w-5xl.bg-white.rounded-lg.rounded-tr-full.bg-opacity-90.col-span-full.row-start-1.row-span-4
+		div.bg-basha-orange.bg-opacity-85.col-span-full.row-start-3.lg:row-start-4.row-span-6.lg:row-span-3
+		img.scale-90.col-start-2.row-start-1.row-span-1.lg:col-start-3.lg:col-span-2.lg:row-start-1.lg:row-span-2.place-self-center src="images/splash.png" alt="splash"
+		div.col-start-1.row-start-1.lg:col-start-1.lg:col-span-2.lg:row-start-1.place-self-center.text-center.lg:m-7
 			h1.text-5xl Consider us the P2P of language learning.
 		div.ml-5.mr-10.col-start-1.col-span-2.row-start-2.place-self-center
 					ul.flex-col.justify-around
@@ -31,7 +31,7 @@ body.bg-gradient-to-r.from-basha-yellow.to-basha-turq
 			text1: "Basha seeks to bridge the gap between language learners and native speakers.", \
 			text2: "Try reaching out to online communities like Reddit if you don't have a translator.", \
 			border_class: "border-basha-bold-orange", \
-			position_classes: "col-start-1 row-start-3 row-span-2"}
+			position_classes: "col-start-1 lg:col-start-1 col-span-2 lg:col-span-1 row-start-3 lg:row-start-3 row-span-1 lg:row-span-2"}
 		= partial 'number_widget', locals: { \
 			alt: "configure", \
 			image: "images/configure.svg",
@@ -39,7 +39,7 @@ body.bg-gradient-to-r.from-basha-yellow.to-basha-turq
 			text1: "We'll show you how to create your own online Basha instance and get started with the included Anki deck.", \
 			text2: "We tried to tailor this step for the less technically inclined, but feel free to contact us if you need help.", \
 			border_class: "border-basha-yellow", \
-			position_classes: "col-start-2 row-start-3 row-span-2"}
+			position_classes: "col-start-1 lg:col-start-2 col-span-2 lg:col-span-1 row-start-4 lg:row-start-3 row-span-1 lg:row-span-2"}
 		= partial 'number_widget', locals: { \
 			alt: "record", \
 			image: "images/record.svg",
@@ -47,7 +47,7 @@ body.bg-gradient-to-r.from-basha-yellow.to-basha-turq
 			text1: "Your translator will record themselves reading the deck in their own language in Basha.", \
 			text2: "Our recording sequence tool takes most of the brain work out, but you should still buy them a coffee to say thanks!", \
 			border_class: "border-basha-green", \
-			position_classes: "col-start-3 row-start-3 row-span-2"}
+			position_classes: "col-start-1 lg:col-start-3 col-span-2 lg:col-span-1 row-start-5 lg:row-start-3 row-span-1 lg:row-span-2"}
 		= partial 'number_widget', locals: { \
 			alt: "learn", \
 			image: "images/learn.svg",
@@ -55,10 +55,10 @@ body.bg-gradient-to-r.from-basha-yellow.to-basha-turq
 			text1: "You can now export your new deck from Basha and practice on Anki.", \
 			text2: "Don't forget to share your deck with the Basha community!", \
 			border_class: "border-basha-turq", \
-			position_classes: "col-start-4 row-start-3 row-span-2"}
-		div.col-start-1.col-span-4.row-start-5
+			position_classes: "col-start-1 lg:col-start-4 col-span-2 lg:col-span-1 row-start-6 lg:row-start-3 row-span-1 lg:row-span-2"}
+		div.col-start-1.col-span-4.row-start-7.lg:row-start-5
 			h1.text-5xl.m-0.py-14.pl-14 Why Did We Make This (and why are we giving it away for free)?
-		div.col-start-1.col-span-2.row-start-6.m-10
+		div.col-start-1.col-span-2.row-start-auto.lg:row-start-6.m-10
 			p There is a long history of immigrants facing pressure to assimilate when they come to America. For too long, our educations systems placed a misinformed emphasis on immigrant children speaking only English at home. As those children grew into adulthood, many found themselves completely divorced from their mother tongue.
 			p Basha exists to help children of immigrants recover mother tongues that are less common and not covered by traditional language-learning apps. We reconnect families that have been separated by linguistic barriers by empowering our users with tools to implement science-backed methods of language learning.
 			p Basha is 100% free for all users. We believe in celebrating the immigrant experience, including our rich multi-lingual histories. Also, and you'll have to excuse our blasphemy, we don't believe that everything on the internet has to be monetized 😉.
