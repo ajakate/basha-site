@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.margin-overlay {
-    margin-left: -100%;
-    z-index: -1;
-}
-
 .grid-auto-6 {
     grid-template-rows: auto auto auto auto auto auto;
 }
@@ -21,4 +16,8 @@
 
 .grid-auto-col-2 {
     grid-template-columns: auto auto;
+}
+
+.grid-auto-col-5 {
+    grid-template-columns: auto auto auto auto auto;
 }
