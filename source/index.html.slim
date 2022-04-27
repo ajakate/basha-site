@@ -8,8 +8,8 @@ body.bg-gradient-to-r.from-basha-yellow.to-basha-turq
 		div.max-w-5xl.bg-white.rounded-lg.rounded-tr-full.bg-opacity-90.col-span-full.row-start-1.row-span-4
 		div.bg-basha-orange.bg-opacity-85.col-span-full.row-start-3.lg:row-start-4.row-span-6.lg:row-span-3
 		img.scale-90.col-start-2.row-start-1.row-span-1.lg:col-start-3.lg:col-span-2.lg:row-start-1.lg:row-span-2.place-self-center src="images/splash.png" alt="splash"
-		div.col-start-1.row-start-1.lg:col-start-1.lg:col-span-2.lg:row-start-1.place-self-center.text-center.lg:m-7
-			h1.text-5xl Consider us the P2P of language learning.
+		div.col-start-1.row-start-1.lg:col-start-1.lg:col-span-2.lg:row-start-1.place-self-center.text-center.m-3.lg:m-7
+			h1.text-2xl.md:text-3xl.lg:text-5xl Consider us the P2P of language learning.
 		div.ml-5.mr-10.col-start-1.col-span-2.row-start-2.place-self-center
 					ul.flex-col.justify-around
 						li.flex.mb-10
@@ -20,7 +20,7 @@ body.bg-gradient-to-r.from-basha-yellow.to-basha-turq
 							img.inline.scale-50 src="images/yellow_diamond.svg"
 							span.inline
 								| Our methodology and tools center around Spaced Repetition Learning (SRS) - recognized by most polyglots as the ideal way to begin a language-learning journey (think flashcards). Learn the Science. 
-						li.flex
+						li.flex.mb-10
 							img.inline.scale-50 src="images/green_diamond.svg"
 							span.inline
 								| You provide the translator and the will to learn, and we offer a comprehensive Anki deck of translatable phrases and a platform for your translator to record and hand off their audio.
@@ -62,3 +62,23 @@ body.bg-gradient-to-r.from-basha-yellow.to-basha-turq
 			p There is a long history of immigrants facing pressure to assimilate when they come to America. For too long, our educations systems placed a misinformed emphasis on immigrant children speaking only English at home. As those children grew into adulthood, many found themselves completely divorced from their mother tongue.
 			p Basha exists to help children of immigrants recover mother tongues that are less common and not covered by traditional language-learning apps. We reconnect families that have been separated by linguistic barriers by empowering our users with tools to implement science-backed methods of language learning.
 			p Basha is 100% free for all users. We believe in celebrating the immigrant experience, including our rich multi-lingual histories. Also, and you'll have to excuse our blasphemy, we don't believe that everything on the internet has to be monetized 😉.
+	div.grid.grid-cols-6.bg-white.bg-opacity-85.py-10
+		div.col-start-1.pl-2
+			img.inline.align-middle src="images/logo.svg" alt="logo"
+			p.inline.font-extrabold.text-basha-bold-orange.text-lg.align-middle Basha
+		.col-start-2
+			p.text-basha-turq.font-bold.mb-2.5 About
+			= link_to("Mission and Team", "www.google.com", class: "text-basha-turq hover:underline")
+		.col-start-3
+			p.text-basha-turq.font-bold.mb-2.5 Resources
+			= link_to("SRS for Language Learning", "www.google.com", class: "text-basha-turq hover:underline")
+			br
+			= link_to("Community Decks", "www.google.com", class: "text-basha-turq hover:underline")
+		.col-start-4
+			p.text-basha-turq.font-bold.mb-2.5 Support
+			= link_to("Configuration Guide", "www.google.com", class: "text-basha-turq hover:underline")
+			br
+			= link_to("Contact Us", "www.google.com", class: "text-basha-turq hover:underline")
+		i.fa.fa-linkedin-square.text-basha-turq.scale-125.col-start-5.pt-2
+	div.bg-white.bg-opacity-85.text-basha-turq.pb-5
+		.text-xs.p-4 ©2020 Basha Lang
