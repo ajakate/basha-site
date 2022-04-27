@@ -16,7 +16,10 @@ module.exports = {
                 '11': '11',
                 '12': '12',
                 '13': '13',
-              }
+              },
+            gridRow: {
+                'span-7': 'span 7 / span 7',
+            }
         }
     }
 }
