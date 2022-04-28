@@ -22,19 +22,34 @@
     grid-template-columns: auto auto auto auto auto;
 }
 
-.circle {
+.circle-base {
     border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    padding: 19px;
     border: 5px solid #fff;
-    
+
     text-align: center;
     font: 28px Arial, sans-serif;
     color: #fff;
 
     top: -10px;
     left: -10px;
+}
+
+@media (max-width:639px) { 
+    .circle {
+        @apply circle-base;
+        width: 65px;
+        height: 65px;
+        padding: 13px;
+    }
+}
+
+@media (min-width:640px) { 
+    .circle {
+        @apply circle-base;
+        width: 80px;
+        height: 80px;
+        padding: 19px;
+    }
 }
 
 .circle-yellow {
