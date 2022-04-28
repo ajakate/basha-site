@@ -31,7 +31,9 @@ body.bg-gradient-to-r.from-basha-yellow.to-basha-turq
 			text1: "Basha seeks to bridge the gap between language learners and native speakers.", \
 			text2: "Try reaching out to online communities like Reddit if you don't have a translator.", \
 			border_class: "border-basha-bold-orange", \
-			position_classes: "col-start-1 lg:col-start-1 col-span-2 lg:col-span-1 row-start-3 lg:row-start-3 row-span-1 lg:row-span-2"}
+			circle_class: "circle-orange", \
+			position_classes: "col-start-1 lg:col-start-1 col-span-2 lg:col-span-1 row-start-3 lg:row-start-3 row-span-1 lg:row-span-2", \
+			index: 1}
 		= partial 'number_widget', locals: { \
 			alt: "configure", \
 			image: "images/configure.svg",
@@ -39,7 +41,9 @@ body.bg-gradient-to-r.from-basha-yellow.to-basha-turq
 			text1: "We'll show you how to create your own online Basha instance and get started with the included Anki deck.", \
 			text2: "We tried to tailor this step for the less technically inclined, but feel free to contact us if you need help.", \
 			border_class: "border-basha-yellow", \
-			position_classes: "col-start-1 lg:col-start-2 col-span-2 lg:col-span-1 row-start-4 lg:row-start-3 row-span-1 lg:row-span-2"}
+			circle_class: "circle-yellow", \
+			position_classes: "col-start-1 lg:col-start-2 col-span-2 lg:col-span-1 row-start-4 lg:row-start-3 row-span-1 lg:row-span-2", \
+			index: 2}
 		= partial 'number_widget', locals: { \
 			alt: "record", \
 			image: "images/record.svg",
@@ -47,7 +51,9 @@ body.bg-gradient-to-r.from-basha-yellow.to-basha-turq
 			text1: "Your translator will record themselves reading the deck in their own language in Basha.", \
 			text2: "Our recording sequence tool takes most of the brain work out, but you should still buy them a coffee to say thanks!", \
 			border_class: "border-basha-green", \
-			position_classes: "col-start-1 lg:col-start-3 col-span-2 lg:col-span-1 row-start-5 lg:row-start-3 row-span-1 lg:row-span-2"}
+			circle_class: "circle-green", \
+			position_classes: "col-start-1 lg:col-start-3 col-span-2 lg:col-span-1 row-start-5 lg:row-start-3 row-span-1 lg:row-span-2", \
+			index: 3}
 		= partial 'number_widget', locals: { \
 			alt: "learn", \
 			image: "images/learn.svg",
@@ -55,7 +61,9 @@ body.bg-gradient-to-r.from-basha-yellow.to-basha-turq
 			text1: "You can now export your new deck from Basha and practice on Anki.", \
 			text2: "Don't forget to share your deck with the Basha community!", \
 			border_class: "border-basha-turq", \
-			position_classes: "col-start-1 lg:col-start-4 col-span-2 lg:col-span-1 row-start-6 lg:row-start-3 row-span-1 lg:row-span-2"}
+			circle_class: "circle-turq", \
+			position_classes: "col-start-1 lg:col-start-4 col-span-2 lg:col-span-1 row-start-6 lg:row-start-3 row-span-1 lg:row-span-2", \
+			index: 4}
 		div.col-start-1.col-span-4.row-start-7.lg:row-start-5
 			h1.text-5xl.m-0.py-14.pl-14 Why Did We Make This (and why are we giving it away for free)?
 		div.col-start-1.col-span-2.row-start-8.lg:row-start-6.m-10
@@ -65,23 +73,4 @@ body.bg-gradient-to-r.from-basha-yellow.to-basha-turq
 		div.col-start-1.col-span-2.row-start-9.row-span-1.lg:col-start-3.lg:row-start-6.lg:col-span-2.text-center
 			p Our Inspiration
 			img.h-52.mx-auto.pb-8 src="images/grandma.png" alt="grandma.png"
-	div.grid.grid-cols-6.bg-white.bg-opacity-85.py-10
-		div.col-start-1.pl-2
-			img.inline.object-contain.h-9 src="images/logo.png" alt="logo"
-			p.inline.font-extrabold.text-basha-bold-orange.text-lg.align-middle Basha
-		.col-start-2
-			p.text-basha-turq.font-bold.mb-2.5 About
-			= link_to("Mission and Team", "www.google.com", class: "text-basha-turq hover:underline")
-		.col-start-3
-			p.text-basha-turq.font-bold.mb-2.5 Resources
-			= link_to("SRS for Language Learning", "www.google.com", class: "text-basha-turq hover:underline")
-			br
-			= link_to("Community Decks", "www.google.com", class: "text-basha-turq hover:underline")
-		.col-start-4
-			p.text-basha-turq.font-bold.mb-2.5 Support
-			= link_to("Configuration Guide", "www.google.com", class: "text-basha-turq hover:underline")
-			br
-			= link_to("Contact Us", "www.google.com", class: "text-basha-turq hover:underline")
-		i.fa.fa-linkedin-square.text-basha-turq.scale-125.col-start-5.pt-2
-	div.bg-white.bg-opacity-85.text-basha-turq.pb-5
-		.text-xs.p-4 ©2020 Basha Lang
+	= partial 'footer'

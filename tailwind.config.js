@@ -4,7 +4,7 @@ module.exports = {
         extend: {
             colors: {
                 'basha-turq': '#2dc3dd',
-                'basha-yellow': '#fffd72',
+                'basha-yellow': '#f3dc44',
                 'basha-orange': '#f6a870',
                 'basha-bold-orange': '#ff8732',
                 'basha-green': '#94e681'

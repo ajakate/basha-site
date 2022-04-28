@@ -21,3 +21,42 @@
 .grid-auto-col-5 {
     grid-template-columns: auto auto auto auto auto;
 }
+
+.circle {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    padding: 19px;
+    border: 5px solid #fff;
+    
+    text-align: center;
+    font: 28px Arial, sans-serif;
+    color: #fff;
+
+    top: -10px;
+    left: -10px;
+}
+
+.circle-yellow {
+    @apply circle;
+    background: #f3dc44;
+    outline: 5px solid #f3dc44;
+}
+
+.circle-orange {
+    @apply circle;
+    background: #ff8732;
+    outline: 5px solid #ff8732;
+}
+
+.circle-turq {
+    @apply circle;
+    background: #2dc3dd;
+    outline: 5px solid #2dc3dd;
+}
+
+.circle-green {
+    @apply circle;
+    background: #94e681;
+    outline: 5px solid #94e681;
+}
