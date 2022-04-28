@@ -2,18 +2,18 @@
 - gen_link = -> (name, link, ad_classes) { link_to(name, link, class: "#{classes}#{ad_classes}") }
 
 div.grid.grid-cols-2.lg:grid-cols-6.bg-white
-		div.p-4
-			img.inline.object-contain.h-9 src="images/logo.png" alt="logo" 
-			p.inline.font-extrabold.text-basha-bold-orange.text-lg.align-middle Basha
-		= gen_link.call("The Mission", "https://middlemanapp.com/basics/templating_language/", "hidden lg:block")
-		= gen_link.call("The Methodology", "https://middlemanapp.com/basics/templating_language/", "hidden lg:block")
-		= gen_link.call("Installation Guide", "https://middlemanapp.com/basics/templating_language/", "hidden lg:block")
-		= gen_link.call("Community Decks", "https://middlemanapp.com/basics/templating_language/", "hidden lg:block")
-		div.flex.col-start-2.justify-end
-			i#hamburger.fa.fa-bars.lg:hidden.text-basha-turq.pr-6.scale-150.hover:text-cyan-600.inline-flex.items-center
-			i#exit.fa.fa-times.hidden.lg:hidden.text-basha-turq.pr-6.scale-150.hover:text-cyan-600.inline-flex.items-center
-		div#menu.flex.flex-col.bg-white.pb-3.hidden
-            = gen_link.call("The Mission", "https://middlemanapp.com/basics/templating_language/", "lg:hidden")
-            = gen_link.call("The Methodology", "https://middlemanapp.com/basics/templating_language/", "lg:hidden")
-		    = gen_link.call("Installation Guide", "https://middlemanapp.com/basics/templating_language/", "lg:hidden")
-		    = gen_link.call("Community Decks", "https://middlemanapp.com/basics/templating_language/", "lg:hidden")
+	div.p-4
+		img.inline.object-contain.h-9 src="images/logo.png" alt="logo" 
+		p.inline.font-extrabold.text-basha-bold-orange.text-lg.align-middle Basha
+	= gen_link.call("The Mission", "https://middlemanapp.com/basics/templating_language/", "hidden lg:block")
+	= gen_link.call("The Methodology", "https://middlemanapp.com/basics/templating_language/", "hidden lg:block")
+	= gen_link.call("Installation Guide", "https://middlemanapp.com/basics/templating_language/", "hidden lg:block")
+	= gen_link.call("Community Decks", "https://middlemanapp.com/basics/templating_language/", "hidden lg:block")
+	div.flex.col-start-2.justify-end
+		i#hamburger.fa.fa-bars.lg:hidden.text-basha-turq.pr-6.scale-150.hover:text-cyan-600.inline-flex.items-center
+		i#exit.fa.fa-times.hidden.lg:hidden.text-basha-turq.pr-6.scale-150.hover:text-cyan-600.inline-flex.items-center
+	div#menu.flex.flex-col.bg-white.pb-3.hidden
+		= gen_link.call("The Mission", "https://middlemanapp.com/basics/templating_language/", "lg:hidden")
+		= gen_link.call("The Methodology", "https://middlemanapp.com/basics/templating_language/", "lg:hidden")
+		= gen_link.call("Installation Guide", "https://middlemanapp.com/basics/templating_language/", "lg:hidden")
+		= gen_link.call("Community Decks", "https://middlemanapp.com/basics/templating_language/", "lg:hidden")
