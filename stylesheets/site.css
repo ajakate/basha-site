@@ -60,3 +60,7 @@
     background: #94e681;
     outline: 5px solid #94e681;
 }
+
+.number-widget-cols {
+    grid-template-columns: 5fr 5fr 18fr;
+}
