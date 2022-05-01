@@ -4,7 +4,8 @@
 
 html, body {
     width: auto!important;
-    overflow-x: hidden!important
+    overflow-x: hidden!important;
+    font-family: 'Nunito', sans-serif;
 }
 
 .grid-auto-11 {

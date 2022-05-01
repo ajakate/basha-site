@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
     content: ["./source/**/*.{slim,js}"],
     theme: {
@@ -22,5 +24,28 @@ module.exports = {
                 'span-8': 'span 8 / span 8',
             }
         }
-    }
+    },
+    plugins: [
+        plugin(function({ addUtilities }) {
+            const nums = [...Array(13).keys()]
+            nums.shift()
+            const fullCss = {}
+
+            for (const rowStart in nums) {
+                for (const colStart in nums) {
+                    for (const rowSpan in nums) {
+                        for (const colSpan in nums) {
+                            const settings = {
+                                'grid-row': `${rowStart} / span ${rowSpan}`,
+                                'grid-column': `${colStart} / span ${colSpan}`
+                            }
+                            fullCss[`.rc-${rowStart}-${rowSpan}-${colStart}-${colSpan}`] = settings
+                        }
+                    }
+                    
+                }
+            }
+            addUtilities(fullCss)
+        })
+      ]
 }
