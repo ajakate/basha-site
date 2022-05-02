@@ -8,14 +8,6 @@ html, body {
     font-family: 'Nunito', sans-serif;
 }
 
-.grid-auto-11 {
-    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
-}
-
-.grid-auto-3 {
-    grid-template-rows: auto auto auto;
-}
-
 .circle-base {
     border-radius: 50%;
     border: 5px solid #fff;
