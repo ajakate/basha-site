@@ -5,7 +5,11 @@
 html, body {
     width: auto!important;
     overflow-x: hidden!important;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo {
+    font-family: 'Khand';
 }
 
 .circle-base {
