@@ -6,7 +6,7 @@ html, body {
     width: auto!important;
     overflow-x: hidden!important;
     font-family: 'Montserrat', sans-serif;
-    color: #597176;
+    color: theme('colors.basha-text');
 }
 
 .logo {
@@ -45,28 +45,33 @@ html, body {
 
 .circle-yellow {
     @apply circle;
-    background: #f3dc44;
-    outline: 5px solid #f3dc44;
+    background: theme('colors.basha-yellow');
+    outline: 5px solid theme('colors.basha-yellow');
 }
 
 .circle-orange {
     @apply circle;
-    background: #ff8732;
-    outline: 5px solid #ff8732;
+    background: theme('colors.basha-bold-orange');
+    outline: 5px solid theme('colors.basha-bold-orange');
 }
 
 .circle-turq {
     @apply circle;
-    background: #2dc3dd;
-    outline: 5px solid #2dc3dd;
+    background: theme('colors.basha-turq');
+    outline: 5px solid theme('colors.basha-turq');
 }
 
 .circle-green {
     @apply circle;
-    background: #94e681;
-    outline: 5px solid #94e681;
+    background: theme('colors.basha-green');
+    outline: 5px solid theme('colors.basha-green');
 }
 
 .number-widget-cols {
     grid-template-columns: 5fr 5fr 18fr;
+}
+
+.header-border {
+    border-style: dashed none;
+    border-width: 5px;
 }
