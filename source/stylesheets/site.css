@@ -70,3 +70,8 @@ html, body {
 .number-widget-cols {
     grid-template-columns: 5fr 5fr 18fr;
 }
+
+.header-border {
+    border-style: dashed none;
+    border-width: 5px;
+}
