@@ -75,3 +75,10 @@ html, body {
     border-style: dashed none;
     border-width: 5px;
 }
+
+.link-border {
+    border-style: solid;
+    border-width: 4px;
+    border-color: theme('colors.basha-yellow-link');
+    color: theme('colors.basha-yellow-link');
+}

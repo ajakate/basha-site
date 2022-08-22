@@ -10,7 +10,8 @@ module.exports = {
                 'basha-orange': '#f6a870',
                 'basha-bold-orange': '#ff8732',
                 'basha-green': '#94e681',
-                'basha-text': '#597176'
+                'basha-text': '#597176',
+                'basha-yellow-link': '#fffd9e'
             },
             gridRowStart: {
                 '8': '8',
