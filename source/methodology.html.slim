@@ -1,0 +1,50 @@
+---
+title: Methodology
+---
+
+body
+	= partial 'navbar'
+    .bg-gradient-to-tr.from-basha-yellow.to-basha-turq.py-5
+        .border.border-white.header-border.p-5.m-10
+            div.text-3xl.lg:text-5xl.text-white
+                p All About Spaced
+                p Repetition Learning (SRL)
+        .flex.justify-end.text-left
+            div.bg-white.lg:rounded-lg.lg:rounded-l-full.max-w-5xl.pb-5
+                .flex.p-8
+                    img.max-h-44.p-3.hidden.md:inline-block src="images/star.png"
+                    .div
+                        .flex.flex-row.justify-between.md:justify-end
+                            img.h-24.md:hidden src="images/star.png"
+                            p.text-basha-bold-orange.font-bold.text-2xl.pb-5.text-center.md:text-right.flex.justify-center.items-center The Most Effective Memorization Technique
+                        .flex.justify-center.items-center
+                            p.max-w-4xl.md:text-right.text-xl Since it's inception in 1939, cognitive psychologists have consistently proven the theory's effectiveness. One of the most recent studies show that SRL can increase knowledge retention by 200%, with all other factors controlled.
+        .hidden.lg:block.p-3
+        .flex.justify-start.text-left
+            div.bg-white.lg:rounded-lg.lg:rounded-r-full.max-w-5xl.pb-5
+                .flex.p-8
+                    .div
+                        .flex.flex-row.justify-around.mb-5
+                            p.text-basha-green.font-bold.text-2xl.text-center.md:text-left.flex.justify-center.items-center The Science
+                            img.h-24.md:hidden src="images/beaker.png"
+                        .flex.justify-center.items-center
+                            p.max-w-4xl.text-left.text-xl Our integrations use a spaced repetition algorithm that increases time intervals between phrases. The algorith outsmarts the 'forgetting curve' to strategically reinforce neural connenctions. Anki goes beyond flashcards by taking thr brainwork out of informational spacing.
+                    img.max-h-44.p-8.hidden.md:inline-block src="images/beaker.png"
+        .hidden.lg:block.p-3
+        .flex.justify-end.text-left
+            div.bg-white.lg:rounded-lg.lg:rounded-l-full.max-w-5xl.pb-5
+                .flex.p-8
+                    div.flex.flex-col.justify-center
+                        img.max-h-24.p-3.hidden.md:block src="images/books.png"
+                    .div
+                        .flex.flex-row.justify-between.md:justify-end
+                            img.h-24.p-3.md:hidden src="images/books.png"
+                            p.text-basha-turq.font-bold.text-2xl.pb-5.text-center.md:text-right.flex.justify-center.items-center More Resources
+                        .flex.justify-center.items-center
+                            ul.max-w-4xl.md:text-right.text-xl
+                                li
+                                    a.block.mb-4.mt-4.text-basha-turq.hover:underline href='https://pubmed.ncbi.nlm.nih.gov/21574747/' target='_blank' Spaced retrieval: absolute spacing enhances learning regardless of relative spacing
+                                    a.block.mb-4.text-basha-turq.hover:underline href='https://icenetblog.royalcollege.ca/2018/04/24/education-theory-made-practical-volume-2-part-3/' target='_blank' Education in Practice: Spaced Repetition Theory
+                                    a.block.mb-4.text-basha-turq.hover:underline href='https://www.oxfordlearning.com/what-is-spaced-practice/' target='_blank' How To Study Using The Spaced Practice Method
+        div
+    = partial 'footer'
