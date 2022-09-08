@@ -18,15 +18,17 @@ body.bg-gradient-to-r.from-basha-yellow.to-basha-turq
 					img.inline.scale-50 src="images/orange_diamond.svg"
 					span
 						| We are a free service that gives you the tools to learn less common languages that often lack adequate resources. Our goal is to help children of immigrants to reconnect with their mother tongues. 
-						= link_to('Read Our Mission', '/mission.html', class: "font-bold hover:underline")
+						= link_to('Read Our Mission', '/mission.html', class: "font-medium hover:underline text-basha-turq")
 				li.flex.mb-10
 					img.inline.scale-50 src="images/yellow_diamond.svg"
 					span.inline
-						| Our methodology and tools center around Spaced Repetition Learning (SRS) - recognized by most polyglots as the ideal way to begin a language-learning journey (think flashcards). Learn the Science. 
+						| Our methodology and tools center around Spaced Repetition Learning (SRS) - recognized by most polyglots as the ideal way to begin a language-learning journey (think flashcards). 
+						= link_to('Learn the Science', 'methodology.html', class: "font-medium hover:underline text-basha-turq")
 				li.flex.mb-10.pb-8
 					img.inline.scale-50 src="images/green_diamond.svg"
 					span.inline
-						| You provide the translator and the will to learn, and we offer a comprehensive Anki deck of translatable phrases and a platform for your translator to record and hand off their audio.
+						| You provide the translator and the will to learn, and we offer a comprehensive Anki deck of translatable phrases and a platform for your translator to record and hand off their audio. 
+						= link_to('Get Started', 'methodology.html', class: "font-medium hover:underline text-basha-turq")
 		= partial 'number_widget', locals: { \
 			alt: "interpreter", \
 			image: "images/interpreter.svg",
