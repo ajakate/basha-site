@@ -46,25 +46,25 @@ html, body {
 .circle-yellow {
     @apply circle;
     background: theme('colors.basha-yellow');
-    outline: 5px solid theme('colors.basha-yellow');
+    --tw-ring-color: theme('colors.basha-yellow');
 }
 
 .circle-orange {
     @apply circle;
     background: theme('colors.basha-bold-orange');
-    outline: 5px solid theme('colors.basha-bold-orange');
+    --tw-ring-color: theme('colors.basha-bold-orange');
 }
 
 .circle-turq {
     @apply circle;
     background: theme('colors.basha-turq');
-    outline: 5px solid theme('colors.basha-turq');
+    --tw-ring-color: theme('colors.basha-turq');
 }
 
 .circle-green {
     @apply circle;
     background: theme('colors.basha-green');
-    outline: 5px solid theme('colors.basha-green');
+    --tw-ring-color: theme('colors.basha-green');
 }
 
 .number-widget-cols {
