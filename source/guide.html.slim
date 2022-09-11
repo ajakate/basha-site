@@ -1,0 +1,209 @@
+---
+title: User Guide
+---
+
+body
+    = partial 'navbar'
+    .bg-gradient-to-tr.from-basha-yellow.to-basha-turq.py-5
+        .border.border-white.header-border.p-5.m-10.md:m-8
+            div.text-3xl.lg:text-5xl.text-white
+                p User Guide
+        .flex.justify-center
+            .flex
+                div
+                    a#install_button.bg-white.p-5.rounded-l-full.flex.justify-between.items-center.tab-border.hover:cursor-pointer
+                        img.inline.object-contain.h-9 src="images/logo_orange.png" alt="logo"
+                        p.inline Install Basha
+                    a#create_button.bg-white.p-5.rounded-l-full.flex.justify-between.items-center.tab-border.opacity-80.hover:cursor-pointer
+                        img.inline.object-contain.h-9 src="images/cards.png" alt="logo"
+                        p Create a Deck
+                    a#share_button.bg-white.p-5.rounded-l-full.flex.justify-between.items-center.tab-border.opacity-80.hover:cursor-pointer
+                        img.inline.object-contain.h-9 src="images/community_icon.png" alt="logo"
+                        p Share a Deck
+                    a#export_button.bg-white.p-5.rounded-l-full.flex.justify-between.items-center.tab-border.opacity-80.hover:cursor-pointer
+                        img.inline.object-contain.h-9 src="images/anki.png" alt="logo"
+                        p Export to Anki
+                    a#restore_button.bg-white.p-5.rounded-l-full.flex.justify-between.items-center.tab-border.opacity-80.hover:cursor-pointer
+                        img.inline.object-contain.h-9 src="images/cloud_sync.png" alt="logo"
+                        p.ml-5 Import & Export
+                div.bg-white.p-5.md:rounded-r-3xl.max-w-4xl
+                    div.max-h-160.overflow-y-scroll.leading-8
+                        div#install_content
+                            h2.text-3xl.my-auto.mb-4 Install Basha
+                            div.my-10
+                                span This guide will teach you how to create, install and use your own free version of Basha. 
+                                span You'll have your own site which you'll be able to share with your friends and family.
+                                div.mt-4
+                                    span.font-semibold NOTE: 
+                                    span We'll be using a free web hosting service called render.com. 
+                                    span At the time of this writing, Render has a limititation of 90 days for free service databases. 
+                                    span It shouldn't have a huge impact, but there are some workaround steps you'll need to take. 
+                                    span Make sure you read the section on 
+                                    a.text-basha-turq.hover:underline href="/guide.html#restore" Importing and Exporting.
+                            div.my-10
+                                = partial 'circle_number', locals: { num: 1 }
+                                span Sign up for account on 
+                                a.text-basha-turq.hover:underline href="https://render.com" target="_blank" render.com
+                                span . This will be where you will host your Basha instance online
+                            div.my-10
+                                = partial 'circle_number', locals: { num: 2 }
+                                span Once you've got your account set up, simply follow 
+                                a.text-basha-turq.hover:underline href="https://render.com/deploy?repo=https://github.com/ajakate/basha" target="_blank" this link
+                                span . You may be asked to enter credit card info. Don't worry, you won't be charged. Render.com simply uses this to prevent fraud.
+                                p.my-4 You should see a screen like below. For the "service group" name, put whatever you like. You'll need it later, but it doesn't matter too much. Hit the apply button.
+                                img.my-10 src="images/screenshots/deploy_screen.png"
+                            div.my-10
+                                = partial 'circle_number', locals: { num: 3 }
+                                span Creating the app may take a while, anywhere from 10 - 30 minutes. Wait a while, and then go to 
+                                a.text-basha-turq.hover:underline href="https://dashboard.render.com" your dashboard
+                                span . You should see a table with two items like shown below. 
+                                span Wait until both of the line items' status is green before moving to the next step.
+                                img.my-10 src="images/screenshots/dashboard_screen.png"
+                                span Click into the top item which has the type "Web Service." 
+                                span On the next page, you should see a link to your custom Basha site in the title. 
+                                span Follow the link, and you should see a welcome page like this:
+                                img.my-10 src="images/screenshots/login_screen.png"
+                                span It may take up to 30 seconds the first time for the screen to show up. 
+                                span Keep retrying until you see it.
+                            .my-10.mx-5.flex.justify-between
+                                / a.text-basha-turq.hover:underline href="/guide.html" ← Previous
+                                div
+                                a.text-basha-turq.hover:underline href="/guide.html#create" Create a Deck →
+                        div#create_content.hidden
+                            h2.text-3xl.my-auto.mb-4 Creating a List
+                            div.my-10
+                                = partial 'circle_number', locals: { num: 1 }
+                                span Once you create your account, the first step will be to create a sentence list. 
+                                span Click on the button "Add a new Deck"
+                                img.my-10 src="images/screenshots/create_deck.png"
+                            div.my-10
+                                = partial 'circle_number', locals: { num: 2 }
+                                span You'll be uploading a plain text file where each line is a sentence that your translator will translate and record audio for. 
+                                span You can either build your old text file, or use some one of our curated lists 
+                                a.text-basha-turq.hover:underline href="/resources.html#sentence_lists" target="_blank" here
+                                span . Enter the name of your list and the language name. 
+                            div.my-10
+                                = partial 'circle_number', locals: { num: 3 }
+                                span Enter the name of your list and the language name. 
+                                span If your language doesn't use a latin-based writing system, 
+                                span your translator will have the option to submit both a phonetic transation and optionally a translation in the language's native script.
+                            .my-8 
+                                = partial 'circle_number', locals: { num: 4 }
+                                span Once you submit, you'll be taken back to your dashboard and you will see your created sentence list.
+                                img.my-10 src="images/screenshots/dashboard.png"
+                            .my-10.mx-5.flex.justify-between
+                                a.text-basha-turq.hover:underline href="/guide.html#install" ← Install Basha
+                                a.text-basha-turq.hover:underline href="/guide.html#share" Share your Deck →
+                        div#share_content.hidden
+                            h2.text-3xl.my-auto.mb-4 Sharing your List
+                            div.my-10
+                                = partial 'circle_number', locals: { num: 1 }
+                                span Now, the next step is to share your list. 
+                                span Click on the 'edit' link to be taken to the main list list page. 
+                                img.my-10 src="images/screenshots/edit_list.png"
+                                span This is the main page that your translator will be working from. 
+                                span When they click "edit" on each sentence, they will be able to easily write a translation and record audio. 
+                            div.my-10
+                                = partial 'circle_number', locals: { num: 2 }
+                                span On this page, click the 'Generate Sharing Link' button. 
+                                span This will give you a URL you can copy and share with any people you are recruiting to translate.
+                                img.my-10 src="images/screenshots/sharing.png"
+                                span When they open the link, they will be able to create an account and start translating your list!
+                            .my-10.mx-5.flex.justify-between
+                                a.text-basha-turq.hover:underline href="/guide.html#create" ← Create a Deck
+                                a.text-basha-turq.hover:underline href="/guide.html#export" Export to Anki →
+                        div#export_content.hidden
+                            h2.text-3xl.my-auto.mb-4 Exporting your List for Learning
+                            div.my-10
+                                = partial 'circle_number', locals: { num: 1 }
+                                span Be sure to sign in periodically and check on the progess of your translators. 
+                                span When they are finished you'll be able to download an Anki Deck of the the full list from your Dashboard. 
+                                span Simply click the 'Download' link and you'll get a .apkg file you can open with Anki.
+                                img.my-10 src="images/screenshots/download.png"
+                            div.my-10
+                                = partial 'circle_number', locals: { num: 2 }
+                                span You can download Anki 
+                                a.text-basha-turq.hover:underline href="https://apps.ankiweb.net/" target="_blank" here
+                                span . Anki is a a free and open source software that let's you study decks of flashcards. 
+                                span It uses SRS Learning to show you cards you find easy less often, and cards you find difficult more often, 
+                                span taking a lot brainwork out of studying. 
+                                span This is the primary method of learning languages used by 
+                                a.text-basha-turq.hover:underline href="https://speechling.com/" target="_blank" Speechling
+                                span  and 
+                                a.text-basha-turq.hover:underline href="https://ai.glossika.com/" target="_blank" Glossika.
+                            div.my-10
+                                = partial 'circle_number', locals: { num: 3 }
+                                span Your Ankideck will contain cards where the front will show the english phrase, 
+                                span and the back will show the translation with autio. 
+                                span If you create a free account with 
+                                a.text-basha-turq.hover:underline href="https://ankiweb.net/account/register" target="_blank" AnkiWeb
+                                span , you can sync your progress between your phone and your computer. 
+                                span Be sure to 
+                                a.text-basha-turq.hover:underline href="/resources.html#community_decks" publicly share 
+                                span your Anki decks as well. 
+                                span Happy Learning!
+                            .my-10.mx-5.flex.justify-between
+                                a.text-basha-turq.hover:underline href="/guide.html#share" ← Share your Deck
+                                a.text-basha-turq.hover:underline href="/guide.html#restore" Backup and Restore →
+                        div#restore_content.hidden
+                            h2.text-3xl.my-auto.mb-4 Backing Up and Restoring your Basha Site
+                            div.my-10
+                                span Unfortunately, while render.com allows us to create our site for free and share with our friends and family, 
+                                span one big drawback is that 
+                                span.font-semibold we can only use our site's database for 90 days. 
+                                span Luckily, we've built in a feature here to help you keep using Basha as long as you need. 
+                                span We recommend doing all of the following steps in one sitting when you get close to the 90 day limit.
+                            div.my-10
+                                = partial 'circle_number', locals: { num: 1 }
+                                span When you are 3 weeks away from your 90 day limit, 
+                                span you will see a warning banner on the site letting you know that you need to reset your Basha database. 
+                                span You can follow that link or simply go to 
+                                span.italic https://your-basha-site.onrender.com/#/backup
+                                span  at any time.
+                                img.my-10 src="images/screenshots/backup_banner.png"
+                            div.my-10
+                                = partial 'circle_number', locals: { num: 2 }
+                                span Click the Download Button here and you will get an archive of all the data on your site, 
+                                span including all users, lists, translations and audio. 
+                                span.font-semibold Make sure you immediately do the next steps after this one. 
+                                span.font-semibold All work done on site from now on will be lost until you restore this archive.
+                                img.my-10 src="images/screenshots/backup.png"
+                            div.my-10
+                                = partial 'circle_number', locals: { num: 3 }
+                                span Go to your 
+                                a.text-basha-turq.hover:underline href="https://dashboard.render.com" render dashboard
+                                span . You'll see two items in the main table. 
+                                span Click on the second one, which should have the type "PostgreSQL." 
+                                span Scroll all the way to the bottom of the next page, and click "Delete Database"
+                                img.my-10 src="images/screenshots/delete_db.png"
+                            div.my-10
+                                = partial 'circle_number', locals: { num: 4 }
+                                span Once the database is deleted, you will be taken back to your dashboard where you will only see one item in your table. 
+                                span Since we deleted the database, your site will not be functioning properly if others are using it. 
+                                span From here, click on the "Blueprints" tab at the top of the site. 
+                                span You should see one entry in the resulting table. I will have the name you chose when you first installed Basha. 
+                                span Click into that item.
+                                img.my-10 src="images/screenshots/blueprints.png"
+                                span On the next page, you'll see a button that says "Manual Sync." Click that, and then click "Approve."
+                                img.my-10 src="images/screenshots/manual_sync.png"
+                            div.my-10
+                                = partial 'circle_number', locals: { num: 5 }
+                                span After a few minutes and then go back to your Dashboard. 
+                                span You'll see that you now have two services again. 
+                                span If they both have a status of "Available" then you can move on to step 6. 
+                                span If you see one with "Service failed," you will need to do one more thing.
+                                img.my-10 src="images/screenshots/service_failed.png"
+                                span Click into the failed service, then click on "Manual Deploy" and "Deploy latest commit." 
+                                span Go back to your Dashboard after that, and after 15 minutes or so you should see both services available again.
+                                img.my-10 src="images/screenshots/manual_deploy.png"
+                            div.my-10
+                                = partial 'circle_number', locals: { num: 6 }
+                                span Once your app is redeployed and working, go your website. 
+                                span Since we deleted the database, it will look like a fresh install, and you'll be prompted to make an account. 
+                                span This time instead of making an account, click on the link to "restore an archived Basha site." 
+                                span This will take you to a page where you can upload the archived file you created in step 2. 
+                                img.my-10 src="images/screenshots/restore.png"
+                                span Once you restore your archived site, you will be taken back to the login page and all your old accounts and data will be back. 
+                            .my-10.mx-5.flex.justify-between
+                                a.text-basha-turq.hover:underline href="/guide.html#export" ← Export to Anki
+    = partial 'footer'

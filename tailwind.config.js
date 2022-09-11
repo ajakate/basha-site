@@ -27,6 +27,10 @@ module.exports = {
             },
             ringWidth: {
                 '5': '5px',
+            },
+            maxHeight: {
+                '128': '32rem',
+                '160': '40rem'
             }
         }
     },
