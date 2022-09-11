@@ -15,12 +15,25 @@ function contentId(str) {
 };
 
 function setTab(elemId) {
-    tabButtons.forEach(function(id) {
-        $(buttonId(id)).addClass("opacity-80");
-        $(contentId(id)).addClass("hidden");
-    });
-    $(buttonId(elemId)).removeClass("opacity-80");
-    $(contentId(elemId)).removeClass("hidden");
+    if($(window).width() >= 768){
+        tabButtons.forEach(function(id) {
+            $(buttonId(id)).addClass("opacity-80");
+            $(contentId(id)).addClass("md:hidden");
+        });
+        $(buttonId(elemId)).removeClass("opacity-80");
+        $(contentId(elemId)).removeClass("md:hidden");
+    } else {
+        $('html, body').animate({
+            scrollTop: $(contentId(elemId)).offset().top
+        }, 1);
+    };
+};
+
+function setFromUrl() {
+    var hash = window.location.hash.substring(1);
+    if (tabButtons.includes(hash)) {
+        setTab(hash);
+    };
 };
 
 $(document).ready(function() {
@@ -37,11 +50,7 @@ $(document).ready(function() {
     });
 
     addEventListener('hashchange', (_) => {
-        var hash = window.location.hash.substring(1);
-
-        if (tabButtons.includes(hash)) {
-            setTab(hash);
-        };
+        setFromUrl();
     });
 
     tabButtons.forEach(function(elemId) {
@@ -51,9 +60,5 @@ $(document).ready(function() {
         });
     });
 
-    var hash = window.location.hash.substring(1);
-
-    if (tabButtons.includes(hash)) {
-        setTab(hash);
-    };
+    setFromUrl();
 });
