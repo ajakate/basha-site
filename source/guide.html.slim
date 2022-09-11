@@ -8,9 +8,9 @@ body
         .border.border-white.header-border.p-5.m-10.md:m-8
             div.text-3xl.lg:text-5xl.text-white
                 p User Guide
-        .flex.justify-center
+        .flex.justify-center.my-12
             .flex
-                div
+                div.hidden.md:block
                     a#install_button.bg-white.p-5.rounded-l-full.flex.justify-between.items-center.tab-border.hover:cursor-pointer
                         img.inline.object-contain.h-9 src="images/logo_orange.png" alt="logo"
                         p.inline Install Basha
@@ -27,7 +27,7 @@ body
                         img.inline.object-contain.h-9 src="images/cloud_sync.png" alt="logo"
                         p.ml-5 Import & Export
                 div.bg-white.p-5.md:rounded-r-3xl.max-w-4xl
-                    div.max-h-160.overflow-y-scroll.leading-8
+                    div.md:max-h-160.md:overflow-y-scroll.leading-8
                         div#install_content
                             h2.text-3xl.my-auto.mb-4 Install Basha
                             div.my-10
@@ -69,7 +69,7 @@ body
                                 / a.text-basha-turq.hover:underline href="/guide.html" ← Previous
                                 div
                                 a.text-basha-turq.hover:underline href="/guide.html#create" Create a Deck →
-                        div#create_content.hidden
+                        div#create_content.md:hidden
                             h2.text-3xl.my-auto.mb-4 Creating a List
                             div.my-10
                                 = partial 'circle_number', locals: { num: 1 }
@@ -94,7 +94,7 @@ body
                             .my-10.mx-5.flex.justify-between
                                 a.text-basha-turq.hover:underline href="/guide.html#install" ← Install Basha
                                 a.text-basha-turq.hover:underline href="/guide.html#share" Share your Deck →
-                        div#share_content.hidden
+                        div#share_content.md:hidden
                             h2.text-3xl.my-auto.mb-4 Sharing your List
                             div.my-10
                                 = partial 'circle_number', locals: { num: 1 }
@@ -112,7 +112,7 @@ body
                             .my-10.mx-5.flex.justify-between
                                 a.text-basha-turq.hover:underline href="/guide.html#create" ← Create a Deck
                                 a.text-basha-turq.hover:underline href="/guide.html#export" Export to Anki →
-                        div#export_content.hidden
+                        div#export_content.md:hidden
                             h2.text-3xl.my-auto.mb-4 Exporting your List for Learning
                             div.my-10
                                 = partial 'circle_number', locals: { num: 1 }
@@ -145,7 +145,7 @@ body
                             .my-10.mx-5.flex.justify-between
                                 a.text-basha-turq.hover:underline href="/guide.html#share" ← Share your Deck
                                 a.text-basha-turq.hover:underline href="/guide.html#restore" Backup and Restore →
-                        div#restore_content.hidden
+                        div#restore_content.md:hidden
                             h2.text-3xl.my-auto.mb-4 Backing Up and Restoring your Basha Site
                             div.my-10
                                 span Unfortunately, while render.com allows us to create our site for free and share with our friends and family, 
