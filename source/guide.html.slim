@@ -34,9 +34,11 @@ body
                                 span This guide will teach you how to create, install and use your own free version of Basha. 
                                 span You'll have your own site which you'll be able to share with your friends and family.
                                 div.mt-4
+                                    span Basha runs on a free web-hosting service called Render which allows you to create your own Basha instance - in other words, you'll be able to duplicate our master copy into your own portal to share with friends and family. 
+                                    span We promise that this quick and simple process will pay off in spades 😊. Continue reading to learn how to get Basha.
+                                div.mt-4
                                     span.font-semibold NOTE: 
-                                    span We'll be using a free web hosting service called render.com. 
-                                    span At the time of this writing, Render has a limititation of 90 days for free service databases. 
+                                    span At the time of this writing, Render has a limitation of 90 days for free service databases. 
                                     span It shouldn't have a huge impact, but there are some workaround steps you'll need to take. 
                                     span Make sure you read the section on 
                                     a.text-basha-turq.hover:underline href="/guide.html#restore" Importing and Exporting.
@@ -44,52 +46,65 @@ body
                                 = partial 'circle_number', locals: { num: 1 }
                                 span Sign up for account on 
                                 a.text-basha-turq.hover:underline href="https://render.com" target="_blank" render.com
-                                span . This will be where you will host your Basha instance online
                             div.my-10
                                 = partial 'circle_number', locals: { num: 2 }
-                                span Once you've got your account set up, simply follow 
+                                span Click 
                                 a.text-basha-turq.hover:underline href="https://render.com/deploy?repo=https://github.com/ajakate/basha" target="_blank" this link
-                                span . You may be asked to enter credit card info. Don't worry, you won't be charged. Render.com simply uses this to prevent fraud.
-                                p.my-4 You should see a screen like below. For the "service group" name, put whatever you like. You'll need it later, but it doesn't matter too much. Hit the apply button.
+                                span  to begin installing Basha.
+                                br
+                                br
+                                span.font-semibold NOTE: 
+                                span You may be asked to enter your credit card details. Render only uses this information for fraud prevention - 
+                                span.font-semibold you will not be charged.
+                                div.my-4 
+                                    span You should now see the app creation page (see below). 
+                                    span The service group name will be the unique name of your Basha site; 
+                                    span choose your name and click the 
+                                    span.font-semibold Apply 
+                                    span button at the bottom of the page.
                                 img.my-10 src="images/screenshots/deploy_screen.png"
                             div.my-10
                                 = partial 'circle_number', locals: { num: 3 }
-                                span Creating the app may take a while, anywhere from 10 - 30 minutes. Wait a while, and then go to 
-                                a.text-basha-turq.hover:underline href="https://dashboard.render.com" your dashboard
-                                span . You should see a table with two items like shown below. 
-                                span Wait until both of the line items' status is green before moving to the next step.
+                                span Render will usually take 10-30 minutes to build your site; you can track progress on your 
+                                a.text-basha-turq.hover:underline href="https://dashboard.render.com" Render dashboard
+                                span . When both line item statuses turn green, click the top 
+                                span.font-semibold Web Service 
+                                span item. There will be a link to your personal Basha site in the next page's title. 
+                                span Click this link to navigate to your site's sign-up page (see below).
+                                br
+                                br
+                                span.font-semibold NOTE: 
+                                span It may take up to 30 seconds for the sign-up page to display. This typically only occurs the first time you access your site.
                                 img.my-10 src="images/screenshots/dashboard_screen.png"
-                                span Click into the top item which has the type "Web Service." 
-                                span On the next page, you should see a link to your custom Basha site in the title. 
-                                span Follow the link, and you should see a welcome page like this:
                                 img.my-10 src="images/screenshots/login_screen.png"
-                                span It may take up to 30 seconds the first time for the screen to show up. 
-                                span Keep retrying until you see it.
                             .my-10.mx-5.flex.justify-between
-                                / a.text-basha-turq.hover:underline href="/guide.html" ← Previous
                                 div
                                 a.text-basha-turq.hover:underline href="/guide.html#create" Create a Deck →
                         div#create_content.md:hidden
                             h2.text-3xl.my-auto.mb-4 Creating a List
                             div.my-10
+                                span The first step after creating your account is to start adding decks. 
+                                span A deck is a list of sentences that you'll share with your translator. 
+                                span Decks are uploaded as plain-text files; Basha reads each line of text as a separate sentence or phrase to be displayed in the deck table. 
+                                span You can use a notepad app to create your own file or use one of our 
+                                a.text-basha-turq.hover:underline href="/resources.html#sentence_lists" target="_blank" curated lists.
+                            div.my-10
                                 = partial 'circle_number', locals: { num: 1 }
-                                span Once you create your account, the first step will be to create a sentence list. 
-                                span Click on the button "Add a new Deck"
+
+                                span Click 
+                                span.font-semibold Add New Deck 
+                                span in the top-right corner of your dashboard.
                                 img.my-10 src="images/screenshots/create_deck.png"
                             div.my-10
                                 = partial 'circle_number', locals: { num: 2 }
-                                span You'll be uploading a plain text file where each line is a sentence that your translator will translate and record audio for. 
-                                span You can either build your old text file, or use some one of our curated lists 
-                                a.text-basha-turq.hover:underline href="/resources.html#sentence_lists" target="_blank" here
-                                span . Enter the name of your list and the language name. 
+                                span Choose a name for your deck and type in the target language that the deck will be translated to.
+                                br
+                                br
+                                span.font-semibold NOTE: 
+                                span If your target language doesn't use a Latin-based alphabet, your translator can submit both a phonetic translation and a translation in the language's native script.
                             div.my-10
                                 = partial 'circle_number', locals: { num: 3 }
-                                span Enter the name of your list and the language name. 
-                                span If your language doesn't use a latin-based writing system, 
-                                span your translator will have the option to submit both a phonetic transation and optionally a translation in the language's native script.
-                            .my-8 
-                                = partial 'circle_number', locals: { num: 4 }
-                                span Once you submit, you'll be taken back to your dashboard and you will see your created sentence list.
+                                span The deck will be displayed on your dashboard; when you click the Edit link, you'll be able to see each sentence in your deck as a distinct table row.
                                 img.my-10 src="images/screenshots/dashboard.png"
                             .my-10.mx-5.flex.justify-between
                                 a.text-basha-turq.hover:underline href="/guide.html#install" ← Install Basha
@@ -98,112 +113,111 @@ body
                             h2.text-3xl.my-auto.mb-4 Sharing your List
                             div.my-10
                                 = partial 'circle_number', locals: { num: 1 }
-                                span Now, the next step is to share your list. 
-                                span Click on the 'edit' link to be taken to the main list list page. 
+                                span Your translator will use the deck details page to provide text and audio translations. Click the 
+                                span.font-semibold Edit 
+                                span link corresponding to your deck on the dashboard to access this page.
                                 img.my-10 src="images/screenshots/edit_list.png"
-                                span This is the main page that your translator will be working from. 
-                                span When they click "edit" on each sentence, they will be able to easily write a translation and record audio. 
                             div.my-10
                                 = partial 'circle_number', locals: { num: 2 }
-                                span On this page, click the 'Generate Sharing Link' button. 
-                                span This will give you a URL you can copy and share with any people you are recruiting to translate.
+                                span Click the 
+                                span.font-semibold Generate Sharing Link 
+                                span button in the top-right corner of the page. Basha will create a URL that you can copy and share with your translator.
+                                span When your translator clicks the link, they will be prompted to create an account before being able to view and interact with your deck.
                                 img.my-10 src="images/screenshots/sharing.png"
-                                span When they open the link, they will be able to create an account and start translating your list!
                             .my-10.mx-5.flex.justify-between
                                 a.text-basha-turq.hover:underline href="/guide.html#create" ← Create a Deck
                                 a.text-basha-turq.hover:underline href="/guide.html#export" Export to Anki →
                         div#export_content.md:hidden
                             h2.text-3xl.my-auto.mb-4 Exporting your List for Learning
                             div.my-10
-                                = partial 'circle_number', locals: { num: 1 }
                                 span Be sure to sign in periodically and check on the progess of your translators. 
-                                span When they are finished you'll be able to download an Anki Deck of the the full list from your Dashboard. 
-                                span Simply click the 'Download' link and you'll get a .apkg file you can open with Anki.
-                                img.my-10 src="images/screenshots/download.png"
-                            div.my-10
-                                = partial 'circle_number', locals: { num: 2 }
-                                span You can download Anki 
-                                a.text-basha-turq.hover:underline href="https://apps.ankiweb.net/" target="_blank" here
-                                span . Anki is a a free and open source software that let's you study decks of flashcards. 
-                                span It uses SRS Learning to show you cards you find easy less often, and cards you find difficult more often, 
-                                span taking a lot brainwork out of studying. 
-                                span This is the primary method of learning languages used by 
+                                span When your translator is finished with your deck, you will download it as an Anki file. 
+                                span Anki is a free, open-source software that uses flashcards and has a built-in algorithm to promote spaced-repetition learning - 
+                                span this method is also used by the language learning products 
                                 a.text-basha-turq.hover:underline href="https://speechling.com/" target="_blank" Speechling
                                 span  and 
                                 a.text-basha-turq.hover:underline href="https://ai.glossika.com/" target="_blank" Glossika.
                             div.my-10
-                                = partial 'circle_number', locals: { num: 3 }
-                                span Your Ankideck will contain cards where the front will show the english phrase, 
-                                span and the back will show the translation with autio. 
-                                span If you create a free account with 
-                                a.text-basha-turq.hover:underline href="https://ankiweb.net/account/register" target="_blank" AnkiWeb
-                                span , you can sync your progress between your phone and your computer. 
+                                = partial 'circle_number', locals: { num: 1 }
+                                span Click the 
+                                span.font-semibold Download 
+                                span link corresponding to your deck on your dashboard.
+                                img.my-10 src="images/screenshots/download.png"
+                            div.my-10
+                                = partial 'circle_number', locals: { num: 2 }
+                                span Download 
+                                a.text-basha-turq.hover:underline href="https://apps.ankiweb.net/" target="_blank" Anki 
+                                span and import the deck that you downloaded from Basha.
+                                br
+                                br
+                                span.font-semibold NOTE: Your Anki deck will contain cards where the front will show the English phrase, and the back will show the translation with audio. 
+                                span If you create a free account with AnkiWeb, you can sync your progress between your phone and your computer. 
                                 span Be sure to 
                                 a.text-basha-turq.hover:underline href="/resources.html#community_decks" publicly share 
-                                span your Anki decks as well. 
-                                span Happy Learning!
+                                span your Anki decks as well!
                             .my-10.mx-5.flex.justify-between
                                 a.text-basha-turq.hover:underline href="/guide.html#share" ← Share your Deck
                                 a.text-basha-turq.hover:underline href="/guide.html#restore" Backup and Restore →
                         div#restore_content.md:hidden
                             h2.text-3xl.my-auto.mb-4 Backing Up and Restoring your Basha Site
                             div.my-10
-                                span Unfortunately, while render.com allows us to create our site for free and share with our friends and family, 
-                                span one big drawback is that 
-                                span.font-semibold we can only use our site's database for 90 days. 
-                                span Luckily, we've built in a feature here to help you keep using Basha as long as you need. 
-                                span We recommend doing all of the following steps in one sitting when you get close to the 90 day limit.
+                                span We use Render to keep Basha free for our users; the downside of us using this service is that each Basha instance 
+                                span.font-semibold can only run for 90 days at a time. 
+                                span Because we value your learning, we've created a workaround feature that allows you to archive and reinstall your Basha instance cyclically.
                             div.my-10
                                 = partial 'circle_number', locals: { num: 1 }
-                                span When you are 3 weeks away from your 90 day limit, 
-                                span you will see a warning banner on the site letting you know that you need to reset your Basha database. 
-                                span You can follow that link or simply go to 
-                                span.italic https://your-basha-site.onrender.com/#/backup
+                                Basha displays a warning banner three weeks before you hit the 90-day limit. You can use that link to renew your Basha instance or use this URL (replace 'your-basha-site' with your site's real name): 
+                                a.text-basha-turq.hover:underline https://your-basha-site.onrender.com/#/backup
                                 span  at any time.
                                 img.my-10 src="images/screenshots/backup_banner.png"
                             div.my-10
                                 = partial 'circle_number', locals: { num: 2 }
-                                span Click the Download Button here and you will get an archive of all the data on your site, 
-                                span including all users, lists, translations and audio. 
-                                span.font-semibold Make sure you immediately do the next steps after this one. 
-                                span.font-semibold All work done on site from now on will be lost until you restore this archive.
+                                span Click the 
+                                span.font-semibold Download 
+                                span button to create an archive of all of the site data. 
+                                span You should complete the rest of this process in one setting, as anything you do on your site after this point won't be saved until you restore the archive.
                                 img.my-10 src="images/screenshots/backup.png"
                             div.my-10
                                 = partial 'circle_number', locals: { num: 3 }
                                 span Go to your 
                                 a.text-basha-turq.hover:underline href="https://dashboard.render.com" render dashboard
-                                span . You'll see two items in the main table. 
-                                span Click on the second one, which should have the type "PostgreSQL." 
-                                span Scroll all the way to the bottom of the next page, and click "Delete Database"
+                                span . Click the second item in the main table (the type should be "PostgreSQL." Click 
+                                span.font-semibold Delete Database 
+                                span at the very bottom of the page and then confirm.
                                 img.my-10 src="images/screenshots/delete_db.png"
                             div.my-10
                                 = partial 'circle_number', locals: { num: 4 }
-                                span Once the database is deleted, you will be taken back to your dashboard where you will only see one item in your table. 
-                                span Since we deleted the database, your site will not be functioning properly if others are using it. 
-                                span From here, click on the "Blueprints" tab at the top of the site. 
-                                span You should see one entry in the resulting table. I will have the name you chose when you first installed Basha. 
-                                span Click into that item.
+                                span Click on the 
+                                span.font-semibold Blueprints 
+                                span tab at the top of the page. The table will contain a cell with the name of your Basha instance; click that item. 
                                 img.my-10 src="images/screenshots/blueprints.png"
-                                span On the next page, you'll see a button that says "Manual Sync." Click that, and then click "Approve."
+                                span On the next page, click 
+                                span.font-semibold Manual Sync 
+                                span and then click 
+                                span.font-semibold Approve.
                                 img.my-10 src="images/screenshots/manual_sync.png"
                             div.my-10
                                 = partial 'circle_number', locals: { num: 5 }
-                                span After a few minutes and then go back to your Dashboard. 
-                                span You'll see that you now have two services again. 
-                                span If they both have a status of "Available" then you can move on to step 6. 
-                                span If you see one with "Service failed," you will need to do one more thing.
+                                span Within 5-10 minutes, you will have two services on your Render dashboard.
+                                br
+                                br
+                                span.font-semibold NOTE: 
+                                span If either item has a "Service Failed" status, click the failed service, click 
+                                span.font-semibold Manual Deploy
+                                span , and then click 
+                                span.font-semibold Deploy Latest Commit
+                                span . Check your Render dashboard again in about 15 minutes to confirm both services are now available.
                                 img.my-10 src="images/screenshots/service_failed.png"
-                                span Click into the failed service, then click on "Manual Deploy" and "Deploy latest commit." 
-                                span Go back to your Dashboard after that, and after 15 minutes or so you should see both services available again.
                                 img.my-10 src="images/screenshots/manual_deploy.png"
                             div.my-10
                                 = partial 'circle_number', locals: { num: 6 }
-                                span Once your app is redeployed and working, go your website. 
-                                span Since we deleted the database, it will look like a fresh install, and you'll be prompted to make an account. 
-                                span This time instead of making an account, click on the link to "restore an archived Basha site." 
-                                span This will take you to a page where you can upload the archived file you created in step 2. 
+                                span Your Basha instance will appear as a new install because we deleted the database; instead of creating a new account on the welcome page, click the 
+                                span.font-semibold Restore an Archived Basha Site 
+                                span link. 
+                            div.my-10
+                                = partial 'circle_number', locals: { num: 7 }
+                                span Upload the archived file from step 2. You'll be prompted to log in. Your archives site will be restored with all of the original data and accounts.
                                 img.my-10 src="images/screenshots/restore.png"
-                                span Once you restore your archived site, you will be taken back to the login page and all your old accounts and data will be back. 
                             .my-10.mx-5.flex.justify-between
                                 a.text-basha-turq.hover:underline href="/guide.html#export" ← Export to Anki
     = partial 'footer'
