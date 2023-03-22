@@ -4,77 +4,78 @@ title: Basha Lang Home Page
 
 body.bg-gradient-to-r.from-basha-yellow.to-basha-turq
 	= partial 'navbar'
-	.grid.grid-cols-2.auto-rows-auto.lg:grid-cols-4.items-stretch
-		div.rc-1-2-1-4.max-w-5xl.bg-white.rounded-lg.rounded-tr-full.lg:rounded-r-full.lg:my-10
-		div.rc-3-8-1-4.lg:rc-4-8-1-4.bg-basha-orange.bg-opacity-85
-			img.invisible.lg:visible.object-cover src="images/grandma_v2.png"
-		img.rc-1-1-2-1.lg:rc-1-2-3-2.scale-90.place-self-center.mt-10 src="images/splash_v2.png" alt="splash image"
-		div.rc-1-1-1-1.lg:rc-1-1-1-2.place-self-center.m-3.lg:m-7.lg:pt-8.pl-8
-			h1.text-2xl.md:text-3xl.lg:text-5xl.mb-2.md:mb-5.lg:mb-6.font-bold We're Basha
-			h1.text-lg.md:text-2xl.lg:text-3xl Consider us the P2P of language learning.
-		div.rc-2-1-1-2.ml-5.mr-10.place-self-center
-			ul.flex-col.justify-around
-				li.flex.mb-10
-					img.inline.scale-50 src="images/orange_diamond.svg"
-					span
-						| We are a free service that gives you the tools to learn less common languages that often lack adequate resources. Our goal is to help children of immigrants to reconnect with their mother tongues. 
-						= link_to('Read Our Mission', '/mission.html', class: "font-medium hover:underline text-basha-turq")
-				li.flex.mb-10
-					img.inline.scale-50 src="images/yellow_diamond.svg"
-					span.inline
-						| Our methodology and tools center around Spaced Repetition Learning (SRS) - recognized by most polyglots as the ideal way to begin a language-learning journey (think flashcards). 
-						= link_to('Learn the Science', 'methodology.html', class: "font-medium hover:underline text-basha-turq")
-				li.flex.mb-10.pb-8
-					img.inline.scale-50 src="images/green_diamond.svg"
-					span.inline
-						| You provide the translator and the will to learn, and we offer a comprehensive Anki deck of translatable phrases and a platform for your translator to record and hand off their audio. 
-						= link_to('Get Started', 'guide.html', class: "font-medium hover:underline text-basha-turq")
-		= partial 'number_widget', locals: { \
-			alt: "interpreter", \
-			image: "images/interpreter.svg",
-			heading: "Pick a Language and Recruit a Translator", \
-			text1: "Basha seeks to bridge the gap between language learners and native speakers.", \
-			text2: "Try reaching out to online communities like Reddit if you don't have a translator.", \
-			border_class: "border-basha-bold-orange", \
-			circle_class: "circle-orange", \
-			position_classes: "rc-3-1-1-2 lg:rc-3-2-1-1", \
-			index: 1}
-		= partial 'number_widget', locals: { \
-			alt: "configure", \
-			image: "images/configure.svg",
-			heading: "Follow Our Basha and Anki Installation Guide", \
-			text1: "We'll show you how to create your own online Basha instance and share it with your translators.", \
-			text2: "We tried to tailor this step for the less technically inclined, but feel free to contact us if you need help.", \
-			border_class: "border-basha-yellow", \
-			circle_class: "circle-yellow", \
-			position_classes: "rc-4-1-1-2 lg:rc-3-2-2-1", \
-			index: 2}
-		= partial 'number_widget', locals: { \
-			alt: "record", \
-			image: "images/record.svg",
-			heading: "Send to Your Translator For Recording", \
-			text1: "Your translator will record themselves reading the deck in their own language in Basha.", \
-			text2: "Our recording sequence tool takes most of the brain work out, but you should still buy them a coffee to say thanks!", \
-			border_class: "border-basha-green", \
-			circle_class: "circle-green", \
-			position_classes: "rc-5-1-1-2 lg:rc-3-2-3-1", \
-			index: 3}
-		= partial 'number_widget', locals: { \
-			alt: "learn", \
-			image: "images/learn.svg",
-			heading: "Export Your Recorded Deck for SRS Learning", \
-			text1: "You can now export your new deck from Basha and practice on Anki.", \
-			text2: "Don't forget to share your deck with the Basha community!", \
-			border_class: "border-basha-turq", \
-			circle_class: "circle-turq", \
-			position_classes: "rc-6-1-1-2 lg:rc-3-2-4-1", \
-			index: 4}
-		div.rc-7-8-1-4.lg:rc-5-8-2-4.bg-white.lg:rounded-lg.lg:rounded-l-full.lg:my-10.lg:ml-24.mb-3
-		div.text-center.lg:text-right.col-start-1.lg:col-start-3.col-span-2.row-start-7.lg:row-start-5.lg:mr-10.mt-5
-			h1.text-3xl.lg:text-5xl.pt-14.px-5 Why Did We Make This?
-			h1.text-xl.lg:text-2xl.pt-5.pb-14.px-6.italic and why are we giving it away for free?
-		div.lg:text-right.col-start-1.col-span-2.lg:col-start-3.row-start-8.lg:row-start-6.mr-10.pb-10.pl-10.lg:pl-18.lg:pl-0
-			p.mb-4 There is a long history of immigrants facing pressure to assimilate when they come to America. For too long, our educations systems placed a misinformed emphasis on immigrant children speaking only English at home. As those children grew into adulthood, many found themselves completely divorced from their mother tongue.
-			p.mb-4 Basha exists to help children of immigrants recover mother tongues that are less common and not covered by traditional language-learning apps. We reconnect families that have been separated by linguistic barriers by empowering our users with tools to implement science-backed methods of language learning.
-			p.mb-4 Basha is 100% free for all users. We believe in celebrating the immigrant experience, including our rich multi-lingual histories. Also, and you'll have to excuse our blasphemy, we don't believe that everything on the internet has to be monetized 😉.
+	.lg:flex.lg:justify-center
+		.max-w-7xl
+			.grid.grid-cols-2.auto-rows-auto.lg:grid-cols-4.items-stretch
+				div.rc-1-2-1-4.max-w-5xl.bg-white.rounded-lg.rounded-tr-full.lg:rounded-r-full.lg:rounded-l-meth.lg:my-10.lg:ml-5.lg:mr-5
+				div.rc-3-8-1-4.lg:rc-4-8-1-4.bg-basha-orange.bg-opacity-85.grandma-container.bg-repeat.tiledBackground
+				img.rc-1-1-2-1.lg:rc-1-2-3-2.scale-90.place-self-center.mt-10 src="images/splash_v2.png" alt="splash image"
+				div.rc-1-1-1-1.lg:rc-1-1-1-2.place-self-center.m-3.lg:m-7.lg:pt-8.pl-8
+					h1.text-2xl.md:text-3xl.lg:text-5xl.mb-2.md:mb-5.lg:mb-6.font-bold We're Basha
+					h1.text-lg.md:text-2xl.lg:text-3xl Consider us the P2P of language learning.
+				div.rc-2-1-1-2.ml-5.mr-10.place-self-center
+					ul.flex-col.justify-around
+						li.flex.mb-10
+							img.inline.scale-50 src="images/orange_diamond.svg"
+							span
+								| We are a free service that gives you the tools to learn less common languages that often lack adequate resources. Our goal is to help children of immigrants to reconnect with their mother tongues. 
+								= link_to('Read Our Mission', '/mission.html', class: "font-medium hover:underline text-basha-turq")
+						li.flex.mb-10
+							img.inline.scale-50 src="images/yellow_diamond.svg"
+							span.inline
+								| Our methodology and tools center around Spaced Repetition Learning (SRS) - recognized by most polyglots as the ideal way to begin a language-learning journey (think flashcards). 
+								= link_to('Learn the Science', 'methodology.html', class: "font-medium hover:underline text-basha-turq")
+						li.flex.mb-10.pb-8
+							img.inline.scale-50 src="images/green_diamond.svg"
+							span.inline
+								| You provide the translator and the will to learn, and we offer a comprehensive Anki deck of translatable phrases and a platform for your translator to record and hand off their audio. 
+								= link_to('Get Started', 'guide.html', class: "font-medium hover:underline text-basha-turq")
+				= partial 'number_widget', locals: { \
+					alt: "interpreter", \
+					image: "images/interpreter.svg",
+					heading: "Pick a Language and Recruit a Translator", \
+					text1: "Basha seeks to bridge the gap between language learners and native speakers.", \
+					text2: "Try reaching out to online communities like Reddit if you don't have a translator.", \
+					border_class: "border-basha-bold-orange", \
+					circle_class: "circle-orange", \
+					position_classes: "rc-3-1-1-2 lg:rc-3-2-1-1", \
+					index: 1}
+				= partial 'number_widget', locals: { \
+					alt: "configure", \
+					image: "images/configure.svg",
+					heading: "Follow Our Basha and Anki Installation Guide", \
+					text1: "We'll show you how to create your own online Basha instance and share it with your translators.", \
+					text2: "We tried to tailor this step for the less technically inclined, but feel free to contact us if you need help.", \
+					border_class: "border-basha-yellow", \
+					circle_class: "circle-yellow", \
+					position_classes: "rc-4-1-1-2 lg:rc-3-2-2-1", \
+					index: 2}
+				= partial 'number_widget', locals: { \
+					alt: "record", \
+					image: "images/record.svg",
+					heading: "Send to Your Translator For Recording", \
+					text1: "Your translator will record themselves reading the deck in their own language in Basha.", \
+					text2: "Our recording sequence tool takes most of the brain work out, but you should still buy them a coffee to say thanks!", \
+					border_class: "border-basha-green", \
+					circle_class: "circle-green", \
+					position_classes: "rc-5-1-1-2 lg:rc-3-2-3-1", \
+					index: 3}
+				= partial 'number_widget', locals: { \
+					alt: "learn", \
+					image: "images/learn.svg",
+					heading: "Export Your Recorded Deck for SRS Learning", \
+					text1: "You can now export your new deck from Basha and practice on Anki.", \
+					text2: "Don't forget to share your deck with the Basha community!", \
+					border_class: "border-basha-turq", \
+					circle_class: "circle-turq", \
+					position_classes: "rc-6-1-1-2 lg:rc-3-2-4-1", \
+					index: 4}
+				div.rc-7-8-1-4.lg:rc-5-8-2-4.bg-white.lg:rounded-lg.lg:rounded-l-full.lg:rounded-r-meth.lg:my-10.lg:mr-5.lg:ml-24.mb-3
+				div.text-center.lg:text-right.col-start-1.lg:col-start-3.col-span-2.row-start-7.lg:row-start-5.lg:mr-10.mt-8
+					h1.text-3xl.lg:text-5xl.pt-14.px-5 Why Did We Make This?
+					h1.text-xl.lg:text-2xl.pt-5.pb-14.px-6.italic and why are we giving it away for free?
+				div.lg:text-right.col-start-1.col-span-2.lg:col-start-3.row-start-8.lg:row-start-6.mr-10.pb-10.pl-10.lg:pl-18.lg:pl-0
+					p.mb-4 There is a long history of immigrants facing pressure to assimilate when they come to America. For too long, our educations systems placed a misinformed emphasis on immigrant children speaking only English at home. As those children grew into adulthood, many found themselves completely divorced from their mother tongue.
+					p.mb-4 Basha exists to help children of immigrants recover mother tongues that are less common and not covered by traditional language-learning apps. We reconnect families that have been separated by linguistic barriers by empowering our users with tools to implement science-backed methods of language learning.
+					p.mb-8 Basha is 100% free for all users. We believe in celebrating the immigrant experience, including our rich multi-lingual histories. Also, and you'll have to excuse our blasphemy, we don't believe that everything on the internet has to be monetized 😉.
 	= partial 'footer'
