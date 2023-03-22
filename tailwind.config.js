@@ -31,6 +31,9 @@ module.exports = {
             maxHeight: {
                 '128': '32rem',
                 '160': '40rem'
+            },
+            borderRadius: {
+                "meth": '1200px'
             }
         }
     },
