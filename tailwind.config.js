@@ -11,7 +11,8 @@ module.exports = {
                 'basha-bold-orange': '#ff8732',
                 'basha-green': '#94e681',
                 'basha-text': '#597176',
-                'basha-yellow-link': '#fffd9e'
+                'basha-yellow-link': '#fffd9e',
+                'basha-yellow-back': '#ffee80'
             },
             gridRowStart: {
                 '8': '8',
