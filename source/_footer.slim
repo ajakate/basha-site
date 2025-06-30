@@ -23,4 +23,15 @@ div.flex.justify-start.flex-col.lg:flex-row.bg-white.py-10
         a.ml-4 href="https://www.linkedin.com/company/bashalang/about/" target="_blank"
             i.fa.fa-linkedin-square.text-basha-turq.scale-125.hover:cursor-pointer
 div.bg-white.text-basha-turq.pb-5
-    .text-xs.p-4 ©2023 Basha Lang
+    .text-xs.p-4
+        span ©
+        span#currentYear 2025
+        span  Basha Lang
+javascript:
+    document.addEventListener("DOMContentLoaded", function() {
+        const currentYear = new Date().getFullYear();
+        const yearElement = document.getElementById("currentYear");
+        if (yearElement) {
+                yearElement.innerHTML = currentYear;
+        }
+    });
